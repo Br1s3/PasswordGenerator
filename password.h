@@ -61,8 +61,6 @@ int randalphabet(unsigned char *buf, int nbchar)
     buf[nbchar] = '\0';
     unsigned char temp;
 
-    size_t nbpaircut = 0;
-    size_t nbpairchar = 0;
     for (int i = 0; i < nbchar; i++) {
 	if (getentropy(&temp, sizeof(temp)) < 0) {
 	    fprintf(stderr, "ERROR: getentropy:: %s\n", strerror(errno));
@@ -73,9 +71,6 @@ int randalphabet(unsigned char *buf, int nbchar)
 	    continue;
 	}
 	unsigned cut = (temp > 117); // Not 50/50 because if temp == 117
-
-	nbpairchar += temp;
-	nbpaircut += cut;
 
 	if (cut) buf[i] = temp%26+97; // Lower cases
 	else     buf[i] = temp%26+65; // Upper cases

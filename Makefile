@@ -3,8 +3,7 @@ RM = rm -rf
 
 FLAGS += \
 -Wall \
--Wextra \
--Wno-unused-parameter
+-Wextra
 
 .PHONY: all clean
 
