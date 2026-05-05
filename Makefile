@@ -9,10 +9,10 @@ FLAGS += \
 .PHONY: all clean
 
 
-all: PasswordGenerator
+all: pwgen
 
-PasswordGenerator: PasswordGenerator.c
+pwgen: PasswordGenerator.c
 	$(CC) $< -o $@ $(FLAGS)
 
 clean:
-	$(RM) PasswordGenerator
+	$(RM) pwgen

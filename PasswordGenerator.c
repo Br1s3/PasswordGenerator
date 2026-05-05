@@ -61,8 +61,7 @@ int main(int argc, char **argv)
 	    fprintf(stdout, "INFO: Usage: %s\n", Usage);
 	    return 0;
 
-
-	    default: /* '?' */
+	default: /* '?' */
 	    fprintf(stderr, "ERROR: Invalid usage: %s\n", Usage);
 	    return 1;
 	}
