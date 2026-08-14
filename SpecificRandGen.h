@@ -11,7 +11,7 @@ int randnum(unsigned char *buf, int nbchar);
 int randalphabet(unsigned char *buf, int nbchar);
 int randalphanum(unsigned char *buf, int nbchar);
 
-# ifdef PASSWORD_IMPLEMENTATION
+# ifdef SPECIFICRANDGEN_IMPLEMENTATION
 
 // Interesting ASCII char 33-126
 // ASCII alphabet : 32-57(Maj) 64-89(Lower case)
@@ -113,6 +113,6 @@ int randalphanum(unsigned char *buf, int nbchar)
 }
 
 
-# endif // PASSWORDLIB_IMPLEMENTATION
+# endif // SPECIFICRANDGENLIB_IMPLEMENTATION
 
-#endif // PASSWORD_H_INCLUED
+#endif // SPECIFICRANDGEN_H_INCLUED
