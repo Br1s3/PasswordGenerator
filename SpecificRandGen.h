@@ -1,10 +1,10 @@
 #ifndef PASSWORD_H_INCLUED
 #define PASSWORD_H_INCLUED
 
-#include <stdio.h>
-#include <unistd.h>
-#include <string.h>
-#include <errno.h>
+#include <stdio.h>  // Used for: fprintf()
+#include <unistd.h> // Used for: getentropy()
+#include <string.h> // Used for: strerror()
+#include <errno.h>  // Used for: errno
 
 int randchar(unsigned char *buf, int nbchar);
 int randnum(unsigned char *buf, int nbchar);
@@ -114,5 +114,4 @@ int randalphanum(unsigned char *buf, int nbchar)
 
 
 # endif // SPECIFICRANDGENLIB_IMPLEMENTATION
-
 #endif // SPECIFICRANDGEN_H_INCLUED
