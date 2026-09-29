@@ -1,6 +1,9 @@
 # Useful program to generate Password
 
-# Use case example:
+> [!WARNING]
+> Works only on a Linux system
+
+## Use case example:
 
 _Need to generate 16 random ASCII characters_
 ```console
